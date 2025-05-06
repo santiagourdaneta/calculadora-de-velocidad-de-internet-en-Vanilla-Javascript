@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Velocidad de Internet (Fibra Óptica)</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Calculadora de Velocidad de Internet (Fibra Óptica)</h1>
+            <p>Ingresa la velocidad de tu plan de fibra óptica para estimar los tiempos de descarga y carga de archivos comunes.</p>
+        </header>
+        <section>
+            <form id="speed-form">
+                <label for="speed">Velocidad del Plan (Mbps):</label>
+                <input type="number" id="speed" name="speed" placeholder="Ej: 100">
+                <p id="speed_error" class="error-message"></p>
+
+                <button type="button" id="calculate-button">Calcular Tiempos</button>
+            </form>
+        </section>
+        <section id="results" style="display:none;">
+            <h2>Tiempos Estimados:</h2>
+            <h3>Descarga:</h3>
+            <ul>
+                <li>10 MB: <span id="download_10mb"></span></li>
+                <li>100 MB: <span id="download_100mb"></span></li>
+                <li>1 GB: <span id="download_1gb"></span></li>
+                <li>10 GB: <span id="download_10gb"></span></li>
+            </ul>
+            <h3>Carga:</h3>
+            <ul>
+                <li>10 MB: <span id="upload_10mb"></span></li>
+                <li>100 MB: <span id="upload_100mb"></span></li>
+                <li>1 GB: <span id="upload_1gb"></span></li>
+                <li>10 GB: <span id="upload_10gb"></span></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
