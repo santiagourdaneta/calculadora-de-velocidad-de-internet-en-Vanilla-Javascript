@@ -1,0 +1,13 @@
+# Dependencias de Node (si se añaden herramientas de desarrollo más tarde)
+/node_modules
+/npm-debug.log
+/yarn-error.log
+
+# Logs y Archivos temporales
+*.log
+npm-debug.log*
+
+# Archivos de caché del OS y Editores
+.DS_Store
+Thumbs.db
+.vscode/
